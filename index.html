@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsBlog</title>
+
+    <link rel="stylesheet" href="bower_components/flexboxgrid/css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body ng-app="myApp">
+    <header>
+        <div class="container">
+            <div class="row between-xs">
+                <h1>
+                    <a href="#/">
+                        <img class="logo" src="assets/img/02-512.png" alt="news">
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul class="main-nav row">
+                        <li><a href="#/">Home</a></li>
+                        <li><a href="#/news">News</a></li>
+                        <li><a href="#/aboutUs">About us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div ng-view></div>
+    <script src="http://maps.google.com/maps/api/js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+    <script src="bower_components/angulike/angulike.js"></script>
+
+    <script src="app/app.module.js"></script>
+
+    <script src="app/app.route.js"></script>
+
+    <script src="app/shared/main/mainController.js"></script>
+    <script src="app/components/singlePage/singlePageController.js"></script>
+    <script src="app/shared/sociale/facebook/fasebookController.js"></script>
+    <script src="app/components/aboutUs/aboutUsController.js"></script>
+    <script src="app/shared/googleMap/mapController.js"></script>
+
+
+</body>
+</html>

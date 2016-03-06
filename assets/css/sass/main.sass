@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700')
+
+@import "variable"
+@import "reset"
+@import "default-classes"
+@import "header"
+
+.article
+  padding: 5% 0
+  border-bottom: 1px solid $border-color
+  &:last-of-type
+    border: none
+  .article-title
+    margin-bottom: 30px
+    a
+      color: #3e3e3e
+      text-decoration: none
+  .about-article
+    margin: 20px 0
+    .article-author:after
+      content: "|"
+      padding: 0 10px
+
+.pagination
+  ul
+    display: flex
+    justify-content: center
+    li
+      list-style: none
+      padding: 5px 10px
+      border: 1px solid rgba(128, 128, 128, 0.58)
+      border-right: none
+      &:last-of-type
+        border-right: 1px solid rgba(128, 128, 128, 0.58)
+      &:hover
+        background: $accent-color
+      &:hover a
+        color: white
+      a
+        text-decoration: none
+        color: $accent-color
+
+.about-us
+  padding: 2% 0
+  .contacts
+    address
+      border-bottom: 1px solid $border-color
+    .contact-name
+      font-size: 32px
+      margin-bottom: 20px
+    p
+      margin-bottom: 20px
+      a
+        text-decoration: none
+        color: black
+        font-size: 21px
+        font-style: normal
+    .main-text
+      margin-top: 20%
+  .map
+    flex-direction: column
+    #map
+      height: 320px
+      width: 500px
+      align-self: flex-end
+  .infoWindowContent
+    font-size:  14px !important
+    border-top: 1px solid #ccc
+    padding-top: 10px
+  h2
+    margin-bottom: 0
+    margin-top: 0

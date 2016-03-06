@@ -1,0 +1,13 @@
+<div>
+    <div class="container">
+        <div class="article">
+            <h2 class="article-title">{{ article.title }}</h2>
+            <p class="article-text">{{article.text}}</p>
+            <div class="about-article row">
+                <p class="article-author">{{ article.author }}</p>
+                <p class="article-pubdate">{{ article.date | date }}</p>
+            </div>
+            <div fb-like></div>
+        </div>
+    </div>
+</div>

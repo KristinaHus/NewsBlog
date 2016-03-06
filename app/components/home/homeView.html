@@ -1,0 +1,10 @@
+<div class="container" ng-controller="mainController">
+    <div class="article" ng-repeat="article in articles | limitTo: 5">
+        <h2 class="article-title"><a href="#/news/{{article.id}}">{{ article.title }}</a></h2>
+        <p class="article-text">{{article.text}}</p>
+        <div class="about-article row">
+            <p class="article-author">{{ article.author }}</p>
+            <p class="article-pubdate">{{ article.date | date }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background: rgba(206, 206, 206, 0.3); }
+
+.row {
+  margin: 0; }
+
+#facebook {
+  margin-top: 30px; }
+
+.container {
+  width: 1000px;
+  padding: 0 15px;
+  margin: auto;
+  background: white; }
+
+header {
+  background: #d0d0d0;
+  margin-bottom: 5px; }
+  header .container {
+    background: transparent; }
+  header .main-nav li {
+    list-style: none;
+    padding: 15px 0; }
+    header .main-nav li a {
+      padding: 15px;
+      color: #88b1db;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out; }
+      header .main-nav li a:hover {
+        background: #88b1db;
+        color: #d0d0d0; }
+  header .logo {
+    width: 40px;
+    height: auto; }
+
+.article {
+  padding: 5% 0;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.3); }
+  .article:last-of-type {
+    border: none; }
+  .article .article-title {
+    margin-bottom: 30px; }
+    .article .article-title a {
+      color: #3e3e3e;
+      text-decoration: none; }
+  .article .about-article {
+    margin: 20px 0; }
+    .article .about-article .article-author:after {
+      content: "|";
+      padding: 0 10px; }
+
+.pagination ul {
+  display: flex;
+  justify-content: center; }
+  .pagination ul li {
+    list-style: none;
+    padding: 5px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.58);
+    border-right: none; }
+    .pagination ul li:last-of-type {
+      border-right: 1px solid rgba(128, 128, 128, 0.58); }
+    .pagination ul li:hover {
+      background: #88b1db; }
+    .pagination ul li:hover a {
+      color: white; }
+    .pagination ul li a {
+      text-decoration: none;
+      color: #88b1db; }
+
+.about-us {
+  padding: 2% 0; }
+  .about-us .contacts address {
+    border-bottom: 1px solid rgba(206, 206, 206, 0.3); }
+  .about-us .contacts .contact-name {
+    font-size: 32px;
+    margin-bottom: 20px; }
+  .about-us .contacts p {
+    margin-bottom: 20px; }
+    .about-us .contacts p a {
+      text-decoration: none;
+      color: black;
+      font-size: 21px;
+      font-style: normal; }
+  .about-us .contacts .main-text {
+    margin-top: 20%; }
+  .about-us .map {
+    flex-direction: column; }
+    .about-us .map #map {
+      height: 320px;
+      width: 500px;
+      align-self: flex-end; }
+  .about-us .infoWindowContent {
+    font-size: 14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px; }
+  .about-us h2 {
+    margin-bottom: 0;
+    margin-top: 0; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+<div class="container about-us" ng-controller="aboutUsController">
+    <div class="row">
+        <div class="contacts col-xs-12 col-md-4">
+            <address>
+                <h3 class="contact-name">{{ name }}</h3>
+                <p class="contact-phone"><a href="tel:{{ phoneNum }}">{{ phoneNum }}</a></p>
+                <p><a href="mailto:{{ email }}">{{ email }}</a></p>
+            </address>
+            <p class="main-text">{{ aboutMe }}</p>
+        </div>
+        <div ng-controller="mapController" class="col-xs-12 col-md-8 map row">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
